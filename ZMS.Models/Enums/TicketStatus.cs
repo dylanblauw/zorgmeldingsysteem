@@ -6,6 +6,7 @@
         Open =2,
         WaitingCustomer = 3,
         WatingSupplier = 4,
-        Solved = 5
+        Solved = 5,
+        Canceld = 6
     }
 }
