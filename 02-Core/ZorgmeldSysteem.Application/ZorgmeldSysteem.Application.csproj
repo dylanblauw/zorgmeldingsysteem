@@ -6,8 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="DTOs\" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\ZorgmeldSysteem.Domain\ZorgmeldSysteem.Domain.csproj" />
+	</ItemGroup>
 
 </Project>

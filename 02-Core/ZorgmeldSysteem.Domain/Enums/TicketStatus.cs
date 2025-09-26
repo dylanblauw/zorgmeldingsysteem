@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace ZorgmeldSysteem.Domain.Enums
 {
@@ -12,31 +7,37 @@ namespace ZorgmeldSysteem.Domain.Enums
         [Display(Name = "Open")]
         Open = 1,
 
-        [Display(Name = "Toegewezen")]
+        [Display(Name = "Assigned")]
         Assigned = 2,
 
-        [Display(Name = "In behandeling")]
+        [Display(Name = "In Progress")]
         InProgress = 3,
 
-        [Display(Name = "Wacht op klant")]
+        [Display(Name = "Pending Customer")]
         PendingCustomer = 4,
 
-        [Display(Name = "Wacht op leverancier")]
+        [Display(Name = "Pending Supplier")]
         PendingSupplier = 5,
 
-        [Display(Name = "Wacht op onderdelen")]
-        AwaitingParts = 6,
+        [Display(Name = "Pending Approval")]
+        PendingApproval = 6,
 
-        [Display(Name = "On hold")]
-        OnHold = 7,
+        [Display(Name = "Awaiting Parts")]
+        AwaitingParts = 7,
 
-        [Display(Name = "Opgelost")]
-        Solved = 8,
+        [Display(Name = "Scheduled")]
+        Scheduled = 8,
 
-        [Display(Name = "Gesloten")]
-        Closed = 9,
+        [Display(Name = "On Hold")]
+        OnHold = 9,
 
-        [Display(Name = "Geannuleerd")]
-        Cancelled = 10
+        [Display(Name = "Solved")]
+        Solved = 10,
+
+        [Display(Name = "Closed")]
+        Closed = 11,
+
+        [Display(Name = "Cancelled")]
+        Cancelled = 12
     }
 }

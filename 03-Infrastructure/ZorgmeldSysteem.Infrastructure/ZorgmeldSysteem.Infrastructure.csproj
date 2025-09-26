@@ -5,5 +5,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
+	<ItemGroup>
+		<ProjectReference Include="..\..\02-Core\ZorgmeldSysteem.Application\ZorgmeldSysteem.Application.csproj" />
+		<ProjectReference Include="..\..\02-Core\ZorgmeldSysteem.Domain\ZorgmeldSysteem.Domain.csproj" />
+	</ItemGroup>
 </Project>

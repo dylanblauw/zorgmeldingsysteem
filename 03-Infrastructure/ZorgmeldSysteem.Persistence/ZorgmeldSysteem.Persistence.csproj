@@ -5,5 +5,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\02-Core\ZorgmeldSysteem.Application\ZorgmeldSysteem.Application.csproj" />
+		<ProjectReference Include="..\..\02-Core\ZorgmeldSysteem.Domain\ZorgmeldSysteem.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0" />
+	</ItemGroup>
 
 </Project>
