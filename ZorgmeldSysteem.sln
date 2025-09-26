@@ -3,7 +3,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZMS.Models", "ZMS.Models\ZMS.Models.csproj", "{9FC57E77-F0E8-4628-8B82-09DF7439CCC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZMS.Models", "ZMS.Models\ZMS.Models.csproj", "{9FC57E77-F0E8-4628-8B82-09DF7439CCC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Ui", "01.Ui", "{02D2923A-52BC-4225-88E1-02ECED6795C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Core", "02.Core", "{59FD039A-F9D8-44B2-8FB3-BB97862A5021}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Infrastructure", "03.Infrastructure", "{8F744412-6BE8-4A01-BE9F-A95E6B07DA5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10.Test", "10.Test", "{7D3393B3-707A-415B-B84A-F4E8E69FC195}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{AB5D8252-DEF6-4B48-AED6-15BCDF302A9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enums", "Enums", "{DC863174-77E2-4380-BC39-154DA6D1F6A0}"
+	ProjectSection(SolutionItems) = preProject
+		ZMS.Models\Enums\Mechanic.cs = ZMS.Models\Enums\Mechanic.cs
+		ZMS.Models\Enums\Priority.cs = ZMS.Models\Enums\Priority.cs
+		ZMS.Models\Enums\TicketStatus.cs = ZMS.Models\Enums\TicketStatus.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{53318899-685D-4C87-B4A2-6127A0087CCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{82796D87-6277-4BEB-96AC-929FAF24C2F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DTOs", "DTOs", "{F5074920-0B00-4DBB-9D79-BDAEB8183DD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +41,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AB5D8252-DEF6-4B48-AED6-15BCDF302A9F} = {59FD039A-F9D8-44B2-8FB3-BB97862A5021}
+		{DC863174-77E2-4380-BC39-154DA6D1F6A0} = {AB5D8252-DEF6-4B48-AED6-15BCDF302A9F}
+		{53318899-685D-4C87-B4A2-6127A0087CCE} = {AB5D8252-DEF6-4B48-AED6-15BCDF302A9F}
+		{82796D87-6277-4BEB-96AC-929FAF24C2F5} = {59FD039A-F9D8-44B2-8FB3-BB97862A5021}
+		{F5074920-0B00-4DBB-9D79-BDAEB8183DD3} = {82796D87-6277-4BEB-96AC-929FAF24C2F5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CA898884-5D66-4EB2-9FD6-17F20D3F3EFB}
