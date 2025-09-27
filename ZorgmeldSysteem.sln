@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10-Tests", "10-Tests", "{81
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZorgmeldSysteem.UnitTests", "10-Tests\ZorgmeldSysteem.UnitTests\ZorgmeldSysteem.UnitTests.csproj", "{D4EEBDCC-8E92-44F6-8779-331EA190BA90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZorgmeldSysteem.WebApi", "01-UI\ZorgmeldSysteem.WebApi\ZorgmeldSysteem.WebApi.csproj", "{A6951678-1AE2-45F5-BFC2-854138260CD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{D4EEBDCC-8E92-44F6-8779-331EA190BA90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4EEBDCC-8E92-44F6-8779-331EA190BA90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4EEBDCC-8E92-44F6-8779-331EA190BA90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6951678-1AE2-45F5-BFC2-854138260CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6951678-1AE2-45F5-BFC2-854138260CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6951678-1AE2-45F5-BFC2-854138260CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6951678-1AE2-45F5-BFC2-854138260CD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{CA514DCF-A983-4272-A289-002BDFB3FFB8} = {FE9196A1-F86F-48A6-A11D-1B975209CD57}
 		{7D2CF95F-D5DF-41FA-B9A9-AD703EFAB41D} = {FE9196A1-F86F-48A6-A11D-1B975209CD57}
 		{D4EEBDCC-8E92-44F6-8779-331EA190BA90} = {81160E1A-B803-4E64-8E2A-39F4F1BA3088}
+		{A6951678-1AE2-45F5-BFC2-854138260CD0} = {02D2923A-52BC-4225-88E1-02ECED6795C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CA898884-5D66-4EB2-9FD6-17F20D3F3EFB}

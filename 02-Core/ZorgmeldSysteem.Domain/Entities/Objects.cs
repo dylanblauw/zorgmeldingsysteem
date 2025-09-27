@@ -2,7 +2,7 @@
 
 namespace ZorgmeldSysteem.Domain.Entities
 {
-    public class Object
+    public class Objects
     {
         [Key]
         public int ObjectID { get; set; }

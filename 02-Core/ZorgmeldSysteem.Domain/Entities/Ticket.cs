@@ -52,6 +52,6 @@ namespace ZorgmeldSysteem.Domain.Entities
         // Navigation properties
         public Company Company { get; set; }
         public Mechanic? Mechanic { get; set; }
-        public Object? Object { get; set; }
+        public Objects? Object { get; set; }
     }
 }
