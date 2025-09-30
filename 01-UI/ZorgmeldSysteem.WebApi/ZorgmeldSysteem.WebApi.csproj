@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -21,10 +21,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\03-Infrastructure\ZorgmeldSysteem.Infrastructure\ZorgmeldSysteem.Infrastructure.csproj" />
     <ProjectReference Include="..\..\03-Infrastructure\ZorgmeldSysteem.Persistence\ZorgmeldSysteem.Persistence.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
