@@ -47,7 +47,13 @@ public class CompanyService : ICompanyService
             Name = createDto.Name,
             Email = createDto.Email,
             Phonenumber = createDto.Phonenumber,
-            Adress = createDto.Adress,
+            Street = createDto.Street,
+            HouseNumber = createDto.HouseNumber,
+            HouseNumberAddition = createDto.HouseNumberAddition,
+            PostalCode = createDto.PostalCode,
+            City = createDto.City,
+            Province = createDto.Province,
+            Country = createDto.Country,
             Contact = createDto.Contact,
             IsExternal = createDto.IsExternal,
             CreatedBy = createDto.CreatedBy,
@@ -78,8 +84,26 @@ public class CompanyService : ICompanyService
         if (updateDto.Phonenumber != null)
             company.Phonenumber = updateDto.Phonenumber;
 
-        if (updateDto.Adress != null)
-            company.Adress = updateDto.Adress;
+        if (updateDto.Street != null)
+            company.Street = updateDto.Street;
+
+        if (updateDto.HouseNumber != null)
+            company.HouseNumber = updateDto.HouseNumber;
+
+        if (updateDto.HouseNumberAddition != null)
+            company.HouseNumberAddition = updateDto.HouseNumberAddition;
+
+        if (updateDto.PostalCode != null)
+            company.PostalCode = updateDto.PostalCode;
+
+        if (updateDto.City != null)
+            company.City = updateDto.City;
+
+        if (updateDto.Province != null)
+            company.Province = updateDto.Province;
+
+        if (updateDto.Country != null)
+            company.Country = updateDto.Country;
 
         if (updateDto.Contact != null)
             company.Contact = updateDto.Contact;
@@ -133,7 +157,13 @@ public class CompanyService : ICompanyService
             Name = company.Name,
             Email = company.Email,
             Phonenumber = company.Phonenumber,
-            Adress = company.Adress,
+            Street = company.Street,
+            HouseNumber = company.HouseNumber,
+            HouseNumberAddition = company.HouseNumberAddition,
+            PostalCode = company.PostalCode,
+            City = company.City,
+            Province = company.Province,
+            Country = company.Country,
             Contact = company.Contact,
             IsExternal = company.IsExternal
         };

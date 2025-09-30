@@ -4,10 +4,10 @@ namespace ZorgmeldSysteem.Application.Interfaces.IServices;
 
 public interface ICompanyService
 {
-    Task GetByIdAsync(int id);
+    Task<CompanyDto?> GetByIdAsync(int id);
     Task<IEnumerable<CompanyDto>> GetAllAsync();
-    Task CreateAsync(CreateCompanyDto createDto);
-    Task UpdateAsync(int id, UpdateCompanyDto updateDto);
+    Task<CompanyDto> CreateAsync(CreateCompanyDto createDto);
+    Task<CompanyDto> UpdateAsync(int id, UpdateCompanyDto updateDto);
     Task DeleteAsync(int id);
     Task<IEnumerable<CompanyDto>> GetExternalCompaniesAsync();
 }

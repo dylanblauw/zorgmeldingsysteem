@@ -4,7 +4,6 @@ namespace ZorgmeldSysteem.Domain.Entities
 {
     public class Company
     {
-
         [Key]
         public int CompanyID { get; set; }
 
@@ -20,8 +19,27 @@ namespace ZorgmeldSysteem.Domain.Entities
         [MaxLength(20)]
         public string Phonenumber { get; set; } = string.Empty;
 
-        [MaxLength(200)]
-        public string Adress { get; set; } = string.Empty;
+        // Adres opgesplitst
+        [MaxLength(100)]
+        public string Street { get; set; } = string.Empty;  // Straatnaam
+
+        [MaxLength(10)]
+        public string HouseNumber { get; set; } = string.Empty;  // Huisnummer
+
+        [MaxLength(10)]
+        public string HouseNumberAddition { get; set; } = string.Empty;  // Toevoeging (bijv. "A", "bis")
+
+        [MaxLength(10)]
+        public string PostalCode { get; set; } = string.Empty;  // Postcode
+
+        [MaxLength(100)]
+        public string City { get; set; } = string.Empty;  // Woonplaats
+
+        [MaxLength(100)]
+        public string Province { get; set; } = string.Empty;  // Provincie
+
+        [MaxLength(100)]
+        public string Country { get; set; } = string.Empty;  // Land
 
         [MaxLength(100)]
         public string Contact { get; set; } = string.Empty;
@@ -40,5 +58,3 @@ namespace ZorgmeldSysteem.Domain.Entities
         public List<Objects> Objects { get; set; } = new();
     }
 }
-
-
