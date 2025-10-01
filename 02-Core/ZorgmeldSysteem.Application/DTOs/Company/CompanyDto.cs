@@ -17,4 +17,5 @@ public class CompanyDto
 
     public string Contact { get; set; } = string.Empty;
     public bool IsExternal { get; set; }
+
 }
