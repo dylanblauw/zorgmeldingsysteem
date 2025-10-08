@@ -59,6 +59,23 @@ public class ObjectController : ControllerBase
         return Ok(objects);
     }
 
+    // GET: api/object/company/5/locations
+    [HttpGet("company/{companyId}/locations")]
+    public async Task<IActionResult> GetLocationsByCompanyId(int companyId)
+    {
+        IEnumerable<ObjectDto> objects = await _objectService.GetByCompanyIdAsync(companyId);
+
+        // Haal unieke locaties op (niet-lege waarden)
+        var locations = objects
+            .Where(o => !string.IsNullOrWhiteSpace(o.Location))
+            .Select(o => o.Location)
+            .Distinct()
+            .OrderBy(l => l)
+            .ToList();
+
+        return Ok(locations);
+    }
+
     // GET: api/object/maintenance/due
     [HttpGet("maintenance/due")]
     public async Task<IActionResult> GetDueForMaintenance()
