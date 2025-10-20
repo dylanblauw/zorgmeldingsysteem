@@ -8,7 +8,7 @@ COPY ["ZorgmeldSysteem.Application.csproj", "."]
 COPY ["ZorgmeldSysteem.Domain.csproj", "."]
 COPY ["ZorgmeldSysteem.Infrastructure.csproj", "."]
 COPY ["ZorgmeldSysteem.Persistence.csproj", "."]
-COPY ["ZMS.Models.csproj", "."]
+COPY ["../../ZMS.Models.csproj", "."]
 
 # Restore dependencies
 RUN dotnet restore "ZorgmeldSysteem.WebApi.csproj"
