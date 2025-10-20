@@ -2,13 +2,13 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Kopieer alle projectbestanden vanuit de root
+# Kopieer projectbestanden met juiste paden
 COPY ["01-UI/ZorgmeldSysteem.WebApi/ZorgmeldSysteem.WebApi.csproj", "01-UI/ZorgmeldSysteem.WebApi/"]
-COPY ["ZorgmeldSysteem.Application.csproj", "."]
-COPY ["ZorgmeldSysteem.Domain.csproj", "."]
-COPY ["ZorgmeldSysteem.Infrastructure.csproj", "."]
-COPY ["ZorgmeldSysteem.Persistence.csproj", "."]
-COPY ["ZMS.Models.csproj", "."]
+COPY ["02-Core/ZorgmeldSysteem.Application/ZorgmeldSysteem.Application.csproj", "02-Core/ZorgmeldSysteem.Application/"]
+COPY ["02-Core/ZorgmeldSysteem.Domain/ZorgmeldSysteem.Domain.csproj", "02-Core/ZorgmeldSysteem.Domain/"]
+COPY ["03-Infrastructure/ZorgmeldSysteem.Infrastructure/ZorgmeldSysteem.Infrastructure.csproj", "03-Infrastructure/ZorgmeldSysteem.Infrastructure/"]
+COPY ["03-Infrastructure/ZorgmeldSysteem.Persistence/ZorgmeldSysteem.Persistence.csproj", "03-Infrastructure/ZorgmeldSysteem.Persistence/"]
+COPY ["ZMS.Models/ZMS.Models.csproj", "ZMS.Models/"]
 
 # Restore dependencies
 RUN dotnet restore "01-UI/ZorgmeldSysteem.WebApi/ZorgmeldSysteem.WebApi.csproj"
